@@ -1,0 +1,98 @@
+@media (max-width: 860px) {
+
+.wineArea
+{
+	height: auto !important;
+	padding-bottom: 20px;
+	.winePrice
+	{
+	float:none !important;
+    padding-top: 50px !important;
+    clear: both !important;
+    margin: auto !important;
+
+    #btn_adicionar
+    {
+
+	    height: 50px !important;
+	    width: 220px !important;
+	    font-size: 25px !important;
+    }
+    #quantity
+    {
+    	font-size: 27px !important;
+    	width: 66px !important;
+        height: 40px !important;
+        margin-left: 37px !important;
+    }
+    .winePrice_add
+    {
+    	height: 50px !important;
+    }
+    .winePrice_clubew
+    {
+    	font-size: 17px !important;
+    }
+}
+}
+.infoarea
+{
+	height: auto !important;
+
+	.infoBox
+	{
+		float: none !important;
+	}
+
+}
+
+}
+
+@media (max-width: 560px) {
+
+header
+{
+	height: auto !important;
+
+	.sentence, .counterArea
+	{
+		text-align: center !important;
+		height: 40px !important;
+		line-height: 40px !important;
+		float: none !important;
+	}
+	.circleWrapper
+	{
+		height: 74px !important;
+		float: none !important;
+	}
+
+}
+.winePic
+{
+	float: none !important;
+	clear: both;
+	margin: auto;
+	margin-top: 20px;
+}
+#footer .wrapper
+{
+	font-size: 13px !important;
+	line-height: 35px !important;	
+	text-align: center;
+}
+
+
+
+
+
+}
+
+@-moz-document url-prefix() {
+
+    .winePic
+    {
+    	margin-top: -80px !important;
+    }
+
+}

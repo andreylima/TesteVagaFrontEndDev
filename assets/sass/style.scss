@@ -1,0 +1,355 @@
+@import 'config';
+@import 'query';
+html, body
+{
+	max-width: 100%;
+}
+.wrapper
+{
+	display: inline-block;
+	margin: auto;
+	text-align: center;
+	height: 100%;
+	clear: both;
+}
+#header
+{
+	height: 90px;
+	background-color: $black-tone;
+	font-family: 'Georgia';	
+	font-size: 19px;
+	text-align: center;
+	.wrapper
+	{
+		display: inline-block;
+		width: auto;
+	}
+	.sentence
+	{
+		height: 90px;
+		line-height: 90px;
+		color: white;
+		float: left;
+		text-align: right;
+	}
+	.circleWrapper
+	{
+		
+		float: left;
+		height: 90px;
+		margin-right: 15px;
+		margin-left: 15px;
+		.circle
+		{
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			background-color: white;
+			text-align: center;
+			margin: auto;
+			margin-top: 10px;
+			.circle_number
+			{
+				color: $black-tone;
+	    		display: block;
+	    		padding-top: 10px;
+	    		font-size: 23px;
+    			font-weight: 600;
+			}
+			.circle_name
+			{
+				color: #6a1a99;
+				font-size: 14px;
+				font-weight: 600;
+			}
+		}
+	}
+	.counterArea
+	{
+		float: left;
+		height: 90px;
+		line-height: 90px;
+		text-align: left;
+		min-width: 225px;
+		.counterArea_sentence
+		{
+			color: white;
+		}
+		.counterArea_counter
+		{
+			color: #8bc34a;
+		}
+	}
+	
+}
+.wineArea
+{
+	height: 59%;
+	background-color: $light-gray;
+	color: $black-tone;
+	text-align: center;
+	.wrapper
+	{
+		width: auto;
+		display: inline-block;
+	}
+	.wineDetails
+	{
+		width: 370px;
+		padding-top: 90px;
+		float: left;
+		.wineDetails_name
+		{
+			font-family: 'Georgia-Bold';
+			font-size: 35px;
+			text-align: right;
+			padding-right: 50px;
+
+		}
+		.wineDetails_region
+		{
+			margin-top: 20px;
+			height: 30px;
+			padding-right: 50px;
+			.wineDetails_region_flag
+			{
+				background: url('../img/assets.png') no-repeat;
+				background-position: -351px -235px; 
+				width: 27px;
+				height: 27px;
+				float: right;
+			}
+			.wineDetails_region_info
+			{
+				font-family: 'Georgia';
+				font-size: 13px;
+				float: right;
+				height: 27px;
+				line-height: 27px;
+				margin-left: 10px;
+				font-weight: 600;
+			}
+		}
+		.wineDetails_score
+		{
+			font-family: 'Roboto-Regular';
+		    font-size: 11px;
+		    position: relative;
+		    margin-top: 10px;
+		    width: 100px;
+		    float: right;
+		    clear: both;
+			padding-right: 50px;
+			&:after
+			{
+				content: "";
+			    background: url(../img/assets.png) no-repeat;
+			    background-position: -308px -395px;
+			    width: 14px;
+			    height: 37px;
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+			    
+			}
+			&:before
+			{	
+				content: "";
+			    background: url(../img/assets.png) no-repeat;
+				background-position: -406px -397px; 
+				width: 14px;
+				height: 37px;
+				position: absolute;
+			    top: 0;
+			    right: 50px;
+			}
+			.wineDetails_score_number
+			{
+				display: block;
+				color: $black-tone;
+				margin-top: 4px;
+			}
+			.wineDetails_score_name
+			{
+				display: block;
+				color: #A0A0A0;
+			}
+		}
+	}
+
+	.winePic
+	{
+		width: 20%;
+		background: url(../img/assets.png) no-repeat;
+		background-position: -92px -51px; 
+		width: 162px;
+		height: 586px;
+		float: left;
+		zoom: 0.70;
+		-moz-transform: scale(0.7);
+		margin-top: 20px;
+		position: relative;
+		.winePic_discount
+		{
+			background: url(../img/assets.png) no-repeat;
+			background-position: -316px -286px; 
+			width: 95px;
+			height: 93px;
+			position: absolute;
+		    right: -38px;
+		    top: 50%;
+
+		}
+	}
+	.winePrice
+	{
+		width: 370px;
+	    padding-top: 110px;
+	    float: left;
+	    font-family: 'Georgia';
+	    .winePrice_was
+	    {
+			font-size: 14px;
+	    }
+	    .winePrice_is
+	    {
+	    	margin-top: 5px;
+			font-size: 32px;
+	    }
+	    .winePrice_add
+	    {
+	    	margin-top: 15px;
+	    	height: 30px;
+	    	#quantity
+	    	{
+	    		background-color: $dark-gray !important;
+	    		border: 0;
+			    font-family: Georgia;
+			    height: 20px;
+			    line-height: 20px;
+			    text-align: center;
+			    font-size: 14px;
+			    width: 36px;
+			    padding: 1px;
+			    margin-top: 5px;
+			    float: left;
+			    margin-left: 77px;
+	    	}
+	    	#btn_adicionar
+	    	{
+	    		border-radius: 5px;
+	    		background-color: #8bc34a;
+	    		font-family: Ubuntu-Medium;
+			    color: #fff;
+			    border: 0;
+			    height: 30px;
+			    margin-left: 5px;
+			    text-decoration: none;
+			    float: left;
+			    width: 141px;
+
+	    	}
+	    }
+	    .winePrice_clubew
+	    	{
+	    		font-weight: 600;
+			    font-size: 14px;
+			    margin-top: 10px;
+			    clear: both;
+	    	}
+	}
+}
+
+
+.infoarea
+{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	height: 73%;
+	text-align: center;
+	.infoBox
+	{
+		margin-top: 40px;
+		height: 400px;
+		width: 325px;
+		float: left;
+		margin-left: 15px;
+		.infoBox_header
+		{
+			font-family: 'Georgia';
+			color: $black-tone;
+			font-size: 29px;
+			margin-bottom: 45px;
+			text-align: left;
+		}
+
+		.infoBox_itens
+		{
+			height: 70px;
+			margin-top: 10px;
+			.infoBox_itens_numbWrap
+			{
+				float: left;
+				width: 35px;
+				.infoNumber
+				{
+					background-color: $dark-gray;
+					height: 20px;
+					width: 20px;
+					color: white;
+					font-family: "Roboto-Bold";
+					font-size: 12px;
+					line-height: 20px;
+				}	
+			}
+			.infoBox_itens_infoWrap
+			{
+				float: left;
+				width: 290px;
+				
+				h3
+				{
+					color: #535353;
+					text-align: left;
+					margin: 0;
+					font-family: 'Georgia';	
+				}
+				.infoText
+				{
+					text-align: left;
+					font-family: "Roboto-Regular";
+					color: #868686;
+					font-size: 14px;
+				}
+
+			}
+
+		}
+	}
+}
+.infoarea .wrapper .infoBox:nth-child(2) .infoBox_header
+{
+	margin-left: 40px;
+}
+.infoarea .wrapper .infoBox:nth-child(1) .infoBox_header
+{
+	margin-left: 20px;
+}
+#footer
+{
+	height: 70px;
+	background-color: $light-gray;
+	text-align: center;
+	clear:both;
+	.wrapper
+	{
+		font-family: "Roboto-Regular";
+		text-align: center;
+		height: 70px;
+		line-height: 70px;
+		color: #535353;
+		font-size: 14px;
+    	font-weight: 600;
+	}
+	
+}

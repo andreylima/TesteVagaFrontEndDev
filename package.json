@@ -1,0 +1,30 @@
+{
+  "name": "winelanding",
+  "version": "1.0.0",
+  "description": "Chegou uma nova safra de um excelente vinho no porto de Vitória e já vamos fazer o lançamento dela na próxima sexta-feira, 23 de outubro de 2015. Será uma campanha de email marketing a ser disparada para nossos 200 mil clientes. O email levará a uma landing page onde eles poderão efetuar a compra do novo produto. Como ação de lançamento, nas primeiras 24 horas o produto terá 30% de desconto. Após esse tempo, toda comunicação referente à promoção, deverá ser removida.",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-cssmin": "^0.14.0",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-contrib-uglify": "^0.9.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-postcss": "^0.7.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreylima/TesteVagaFrontEndDev.git"
+  },
+  "author": "Andrey Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreylima/TesteVagaFrontEndDev/issues"
+  },
+  "homepage": "https://github.com/andreylima/TesteVagaFrontEndDev#readme"
+}

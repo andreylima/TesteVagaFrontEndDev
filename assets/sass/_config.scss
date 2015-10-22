@@ -1,0 +1,33 @@
+$black-tone : #333333;
+$light-gray: #f3f3f3;
+$dark-gray: #cccccc;
+
+@font-face {
+  font-family: "Georgia";
+  src: url("../fonts/Georgia.ttf");
+}
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto-Thin.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Ubuntu-Medium";
+  src: url("../fonts/Ubuntu-M.ttf");
+}
+@font-face {
+  font-family: "Georgia-Bold";
+  src: url("../fonts/Georgia Bold.ttf");
+}
+html, body
+{
+	margin: 0;
+	height: 100%;
+}
